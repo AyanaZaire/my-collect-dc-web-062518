@@ -1,21 +1,9 @@
-collection = ["Tim Jones", "Tom Smith", "Jim Campagno"]
-
-def my_collect(collection)
+def my_collect(array)
   i = 0
-  while i < collection.length
-    yield(collection[i])
-    i = i + 1
+  collect = []
+  while i < array.length
+    collect << yield(array[i])
+    i+=1
   end
-  collection.split(" ").first
-end
-
-collection = ['ruby', 'javascript', 'python', 'objective-c']
-
-def my_collect(collection)
-  i = 0
-  while i < collection.length
-    yield(collection[i])
-    i = i + 1
-  end
-  collection.upcase
+  collect
 end
