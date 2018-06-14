@@ -6,10 +6,10 @@ def my_collect(collection)
     yield(collection[i])
     i = i + 1
   end
-  collection
+  collection.
 end
 
-collection = ["Tim Jones", "Tom Smith", "Jim Campagno"]
+collection = ['ruby', 'javascript', 'python', 'objective-c']
 
 def my_collect(collection)
   i = 0
@@ -17,5 +17,5 @@ def my_collect(collection)
     yield(collection[i])
     i = i + 1
   end
-  collection
+  collection.upcase
 end
