@@ -6,7 +6,7 @@ def my_collect(collection)
     yield(collection[i])
     i = i + 1
   end
-  collection.
+  collection.split(" ").first
 end
 
 collection = ['ruby', 'javascript', 'python', 'objective-c']
